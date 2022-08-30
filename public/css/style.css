@@ -1,0 +1,840 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@300;500;600&display=swap');
+
+:root{
+    --lato : 'Lato', sans-serif;
+    --nunito : 'Nunito', sans-serif;
+
+    --orange : #E8630A;
+    --kuning : #FCD900;
+    --abu : #035397;
+    --biru : #001E6C;
+    --hitam : #000;
+    --putih : #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--nunito);
+    transition: 1s ease all;
+}
+
+/* NAVBAR STYLING STARTED */
+#navbar {
+    box-shadow: 0 2px 3px rgba(0,0,0,.1);
+}
+
+#navbar .navbar-brand{
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--hitam);
+    text-shadow:2px 2px 3px rgba(0,0,0,.1);
+
+}
+
+#navbar span{
+    color: var(--kuning);
+}
+
+#navbar .login{
+    background-color: var(--biru);
+    color: var(--putih);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#navbar ul .btn-logout{
+    background-color: var(--biru);
+    color: var(--putih);
+    width: fit-content;
+    margin: 5px;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+#navbar ul .btn-logout:hover{
+    background-color: var(--orange);
+}
+/* NAVBAR STYLING FINISHED */
+
+/* HOME STYLING STARTED */
+
+.home .benner strong{
+    font-size: 1.5em;
+    background: -webkit-linear-gradient(right, var(--orange), var(--kuning));
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+}
+
+.home .benner h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--hitam);
+    margin: 10px 0;
+}
+
+.home .benner span{
+    background: -webkit-linear-gradient(right, var(--orange), var(--kuning));
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.home .benner p{
+    color: var(--hitam);
+    font-weight: 100;
+}
+
+.home .benner .more{
+    text-decoration: none;
+    color: var(--putih);
+    background-color: var(--biru);
+    text-decoration: none;
+    padding: 7px 26px;
+    border-radius: 5px;
+    margin: 20px 0;
+    display: block;
+    width: fit-content;
+    transition: 1s ease all;
+}
+
+.home .benner .more:hover{
+   background-color: var(--kuning);
+}
+
+.more{
+    text-decoration: none;
+    color: var(--putih);
+    background-color: var(--biru);
+    text-decoration: none;
+    padding: 7px 26px;
+    border-radius: 5px;
+    margin: 20px 0;
+    display: block;
+    width: fit-content;
+    transition: 1s ease all;
+}
+
+.more:hover{
+   background-color: var(--kuning);
+}
+
+.promo{
+    background-color: var(--biru);
+    padding: 20px;
+}
+
+.promo .promoTitle p{
+    font-size: 1.3em;
+    color: var(--putih);
+}
+
+.promo .promoTitle h3{
+    font-size: 2em;
+    color: var(--putih);
+    font-weight: bold;
+}
+
+.promo .card:hover img{
+    transform: scale(1.1);
+}
+
+.promo .card:hover{
+    background-color: var(--abu);
+}
+
+.promo .card h5{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.promo .card{
+    position: relative;
+    overflow: hidden;
+}
+
+.promo .card .diskon{
+    position: absolute;
+    background-color: var(--biru);
+    color: var(--putih);
+    top: 10px;
+    right: 10px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.4);
+    padding: 5px;
+    z-index: 99;
+}
+
+
+.promo .card .detail{
+    background-color: var(--biru);
+    color: var(--putih);
+    transition: 1s ease all;
+}
+
+.promo .card .detail:hover{
+    background-color: var(--orange);
+}
+
+.promo .card .buy{
+    background-color: var(--orange);
+    color: var(--putih);
+    transition: 1s ease all;
+}
+
+.promo .card .buy:hover{
+   background-color: var(--biru);
+}
+
+.promo .card .price{
+    margin: 0 0 20px 0;
+}
+
+.promo .promoTitle span{
+    color: var(--kuning);
+}
+
+.promo .card .price .awal{
+    background-color: var(--kuning);
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: line-through;
+    color: var(--putih);
+    font-style: italic;
+    width: fit-content;
+}
+
+.promo .card .price .akhir{
+    background-color: var(--orange);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--putih);
+    width: fit-content;
+   
+}
+
+.about{
+    padding: 20px;
+}
+
+.about .aboutTitle p{
+    color: var(--hitam);
+}
+
+.about .aboutTitle h3{
+    font-size: 1.5em;
+    color: var(--hitam);
+    font-weight: bold;
+}
+
+.about .aboutTitle span{
+    color: var(--orange);
+}
+
+
+.about p{
+    color: var(--hitam);
+    font-weight: 100;
+}
+
+.about .more{
+    text-decoration: none;
+    color: var(--putih);
+    background-color: var(--orange);
+    text-decoration: none;
+    padding: 7px 26px;
+    border-radius: 5px;
+    margin: 20px 0;
+    display: block;
+    width: fit-content;
+    transition: 1s ease all;
+}
+
+.about .more:hover{
+   background-color: var(--biru);
+}
+
+
+.about .part .card:hover img{
+    transform: scale(1.1);
+}
+
+
+.about .part .card h5{
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--hitam);
+}
+
+.about .part .card{
+    position: relative;
+    overflow: hidden;
+}
+
+.about .part .card .map{
+    background-color: var(--biru);
+    color: var(--putih);
+}
+
+.about .part .card .map:hover{
+    background-color: var(--orange);
+}
+
+.about .part .row .card p{
+    font-weight: 100;
+}
+
+.about .part a{
+    text-decoration: none;
+    color: var(--hitam);
+}
+
+
+.detailPromo h3{
+    font-size: 2em;
+    color: var(--hitam);
+    font-weight: bold;
+}
+
+.detailPromo .card h5{
+    font-size: 1.5em;
+    color: var(--hitam);
+}
+
+.detailPromo .price .awal{
+    background-color: var(--kuning);
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: line-through;
+    color: var(--putih);
+    font-style: italic;
+    width: fit-content;
+  }
+  
+.detailPromo .price .akhir{
+    background-color: var(--orange);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--putih);
+    width: fit-content;
+   }
+
+.detailPromo .diskon{
+    background-color: var(--biru);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--putih);
+    width: fit-content;
+   }
+
+   .branch .part .card:hover img{
+    transform: scale(1.1);
+}
+
+
+.branch .part .card h5{
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--hitam);
+}
+
+.branch .part .card{
+    position: relative;
+    overflow: hidden;
+}
+
+.branch .part .card .map{
+    background-color: var(--biru);
+    color: var(--putih);
+}
+
+.branch .part .card .map:hover{
+    background-color: var(--orange);
+}
+
+.branch .part .row .card p{
+    font-weight: 100;
+}
+
+.branch .part a{
+    text-decoration: none;
+    color: var(--hitam);
+}
+
+   .detailPromo .card .buy{
+    background-color: var(--orange);
+    color: var(--putih);
+}
+
+.course{
+    background-color: var(--biru);
+    padding: 20px;
+}
+
+.course .courseTitle p{
+    font-size: 1.3em;
+    color: var(--putih);
+}
+
+.course .courseTitle h3{
+    font-size: 2em;
+    color: var(--putih);
+    font-weight: bold;
+}
+
+.course .card:hover img{
+    transform: scale(1.1);
+}
+
+
+.course .card h5{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.course .card{
+    position: relative;
+    overflow: hidden;
+}
+
+.course .card .detail{
+    background-color: var(--biru);
+    color: var(--putih);
+    transition: 1s ease all;
+}
+
+.course .card .detail:hover{
+    background-color: var(--orange);
+}
+
+.course .card .buy{
+    background-color: var(--orange);
+    color: var(--putih);
+    transition: 1s ease all;
+}
+
+.course .card .buy:hover{
+   background-color: var(--biru);
+}
+
+.course .card .price{
+    margin: 0 0 20px 0;
+}
+
+
+.course .courseTitle span{
+    color: var(--kuning);
+}
+
+.course .card .price .akhir{
+    background-color: var(--orange);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--putih);
+    width: fit-content;
+}
+   
+.tutor{
+    padding: 20px;
+}
+
+.tutor .tutorTitle p{
+    color: var(--hitam);
+}
+
+.tutor .tutorTitle h3{
+    font-size: 1.5em;
+    color: var(--hitam);
+    font-weight: bold;
+}
+
+.tutor .tutorTitle span{
+    color: var(--orange);
+}
+
+.tutor p{
+    color: var(--hitam);
+}
+
+.tutor .card .card-body{
+    position: relative;
+}
+
+.tutor .card{
+    overflow: hidden;
+}
+
+.tutor .card:hover img{
+    transform: scale(1.1);
+}
+
+.tutor .card .card-body .image-tutor{
+    position: absolute;
+    top: -70px;
+    left: 35%;
+    box-shadow: 1px 2px 3px rgba(0,0,0,.1);
+    overflow: hidden;
+}
+
+.tutor .more{
+    display: block;
+    background-color: var(--biru);
+    width: fit-content;
+    padding: 4px 16px;
+    border-radius: 5px;
+    color: var(--putih);
+    text-decoration: none;
+    font-size: 1.4em;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+    margin: 0 auto;
+    border: 1px solid rgba(0,0,0,0.2);
+} 
+
+.say{
+    padding: 20px;
+    background-color: var(--biru);
+}
+
+.say .sayTitle p{
+    color: var(--putih);
+}
+
+.say .sayTitle h3{
+    font-size: 1.5em;
+    color: var(--putih);
+    font-weight: bold;
+}
+
+.say .sayTitle span{
+    color: var(--kuning);
+}
+
+.say .card .card-body{
+    position: relative;
+}
+
+.say h5 {
+    color: var(--hitam);
+    transition: 1s ease all;
+    font-weight: bold;
+}
+
+.say strong{
+    color: var(--hitam);
+    transition: 1s ease all;
+    font-weight: bold;
+}
+
+.say .card p{
+    color: var(--hitam);
+    transition: 1s ease all;
+    font-weight: 100;
+}
+
+.say .card{
+    overflow: hidden;
+}
+
+.say .card:hover img{
+    transform: scale(1.1);
+}
+
+.say .card .card-body{
+    position: relative;
+}
+
+.say .card .card-body .petik{
+    position: absolute;
+    top: 10px;
+     right: 10px;
+     font-size: 1.5em;
+     color: var(--orange);
+}
+
+.say .card:hover{
+    background-color: var(--orange);
+}
+
+.say .card:hover .card-body p{
+   color: var(--putih);
+}
+
+.say .card:hover .card-body h5{
+   color: var(--putih);
+}
+
+.say .card:hover .card-body strong{
+   color: var(--putih);
+}
+
+.say .card:hover .card-body .petik{
+   color: var(--putih);
+}
+
+.komentar {
+    padding: 20px;
+}
+
+.komentar .komentarTitle {
+    text-align: center;
+    font-weight: bold;
+}
+
+.komentar .here{
+    background-color: var(--biru);
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.komentar .more{
+    text-decoration: none;
+    color: var(--putih);
+    background-color: var(--orange);
+    text-decoration: none;
+    padding: 7px 26px;
+    border-radius: 5px;
+    margin: 20px 0;
+    display: block;
+    width: fit-content;
+    transition: 1s ease all;
+    border: none;
+}
+
+.komentar span{
+    color: var(--orange);
+}
+
+.komentar .result{
+    height: 600px;
+    overflow: scroll;
+    padding: 20px;
+}
+
+.komentar .result .email{
+    font-size: 1.3em;
+    color: var(--hitam);
+}
+
+.komentar .result .name{
+    font-size: 1.1em;
+    color: var(--hitam);
+}
+
+.komentar .result p{
+    color: var(--hitam);
+    font-weight: 100;
+}
+
+.komentar .result .petik{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+}
+
+.komentar .login{
+    background-color: var(--biru);
+    color: var(--putih);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.category span{
+    color: var(--orange);
+}
+
+.category .title h3{
+    font-weight: bold;
+    color: var(--hitam);
+}
+
+.category .card{
+    position: relative;
+}
+
+.category .card strong{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,69,0,.8);
+    width: 80%;
+    padding: 10px 20px;
+    text-align: center;
+    color: var(--putih);
+    font-size: 1.5em;
+    box-shadow: 2px 2px 4px rgba(255,255,255,.8);
+}
+
+.category .card::before{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.10);
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+.category img{
+    width: 100%;
+}
+
+/* HOME STYLING FINISHED */
+
+/* COURSE STYLING STARTED */
+/* COURSE STYLING FINISHED */
+
+/* BLOG STYLING STARTED */
+#blogs{
+    margin-top: 90px;
+}
+
+#blogs .container h2{
+    font-size: 2.5em;
+    font-family: var(--lato);
+    color: var(--hitam);
+}
+
+#blogs .container p{
+    font-family: var(--lato);
+    color: var(--hitam);
+}
+
+#blogs h5{
+    font-size: 1.5em;
+    color: var(--hitam);
+}
+
+#blogs .more{
+    text-decoration: none;
+    background-color: var(--biru);
+    color: var(--putih);
+    padding: 7px 26px;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#blogs .card:hover img{
+    transform: scale(1.1);
+}
+
+#blogs .card{
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+#blogs .more:hover{
+    background-color: var(--orange);
+}
+
+#blogs .category a{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 999;
+    text-decoration: none;
+    color: var(--putih);
+    background-color: var(--orange);
+    font-weight: bold;
+    padding: 5px 10px;
+    text-align: center;
+    text-shadow: 0px 2px 2px rgba(0,0,0,.4);
+}
+
+.gambar{
+    margin-top: 90px;
+}
+
+.title h5{
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: var(--hitam);
+    font-family: var(--lato);
+}
+
+.title p{
+    color: var(--hitam);
+    font-family: var(--lato);
+    text-decoration: none;
+}
+
+
+/* BLOG STYLING FINISHED */
+
+
+/* Footer styling */
+footer{
+    background-color: var(--biru);
+    padding: 30px 0;
+}
+
+footer .title{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--putih);
+}
+
+footer .deskripsi{
+    font-weight: 100;
+    color: var(--putih);
+}
+
+footer .image img{
+    border-radius: 6px;
+}
+
+footer .icons{
+    display: flex;
+}
+
+footer .icons a{
+    background-color: var(--putih);
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    color: var(--biru);
+    margin: 0 5px;
+    transition: 1s ease all;
+}
+
+footer .icons a:hover{
+    transform: scale(1.1);
+    background-color: var(--biru);
+    color: var(--putih);
+}
+
+footer .bottom p{
+    color: var(--putih);
+}
+/* Footer styling end */
+
+
+
+
+@media screen and (max-width:767px){
+    .home {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    html{
+        font-size: 80%;
+    }
+
+    .home .benner .kanan{
+        order: 1;
+    }
+
+    .home .benner .kiri{
+        order: 2;
+    }
+
+    .home .benner h1{
+        font-size: 3.5em;
+    }
+}
+

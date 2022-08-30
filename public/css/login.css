@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@300;500;600&display=swap');
+
+:root{
+    --lato : 'Lato', sans-serif;
+    --nunito : 'Nunito', sans-serif;
+
+    --orange : #E8630A;
+    --kuning : #FCD900;
+    --abu : #035397;
+    --biru : #001E6C;
+    --hitam : #000;
+    --putih : #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--nunito);
+}
+/* LOGIN STYLING AND REGISTRASI STARTED */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container .login{
+    border-right: 1px solid var(--biru);
+    border-bottom: 1px solid var(--biru);
+    border-left: 1px solid var(--kuning);
+    border-top: 1px solid var(--kuning);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.2);
+}
+
+.container .login .icons{
+    text-align: center;
+}
+.container .login .icons .bi-lock-fill{
+    font-size: 2em;
+    color: var(--biru);
+    display: block;
+}
+
+.container .login h3{
+    text-align: center;
+    font-weight: bold;
+    color: var(--hitam);
+    margin: 20px 0;
+}
+
+.container span{
+    color: var(--kuning);
+}
+
+.container .login .bi-person-fill , .container .login .bi-key-fill , .container .login .bi-envelope-fill{
+    background-color: var(--biru);
+    padding: 2px 5px;
+    color: var(--putih);
+    border-radius: 3px;
+}
+
+.container .btn-login{
+    background-color: var(--biru);
+    color: var(--putih);
+    border-radius: 6px;
+    padding: 7px 36px;
+    outline: none;
+    border:none;
+    display: block;
+    margin: 20px auto;
+    transition: 1s ease all;
+}
+
+.container .btn-login:hover{
+    background-color: var(--kuning);
+    color: var(--hitam);
+}
+
+
+.or{
+    position: relative;
+}
+
+.or::after{
+    width: 180px;
+    height: 0px;
+    position: absolute;
+    left: 0;
+    content: '';
+    display: block;
+    border-top: 1px solid var(--kuning);
+}
+
+.or::before{
+    width: 180px;
+    height: 0px;
+    content: '';
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    display: block;
+    border-top: 1px solid var(--kuning);
+}
+
+.container .btn-facebook{
+    background-color: var(--biru);
+    color: var(--putih);
+    border-radius: 6px;
+    padding: 7px 36px;
+    outline: none;
+    border:none;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    transition: 1s ease all;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container .btn-facebook:hover{
+    background-color: var(--kuning);
+    color: var(--hitam);
+}
+
+.container .btn-google{
+    background-color: red;
+    color: var(--putih);
+    border-radius: 6px;
+    padding: 7px 36px;
+    outline: none;
+    border:none;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    transition: 1s ease all;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container .btn-google:hover{
+    background-color: var(--kuning);
+    color: var(--hitam);
+}
+.container .login input {
+    width: 400px;
+}
+/* LOGIN STYLING AND REGISTRASI FINISHED */
